@@ -1,3 +1,4 @@
+
 header{
     background-color:transparent;
 }
@@ -12,7 +13,7 @@ nav ul{
     flex-direction: column;
 }
 nav ul li a {
-    color: #f9f9f9;
+    color: #000000;
     display: inline-block;
     display: -webkit-inline-box;
     display: -moz-inline-box;
@@ -169,7 +170,7 @@ nav ul li:hover{
     /*effect on links when hover*/
     .header-nav a{
         position: relative;
-        color: #f9f9f9;
+        color: #000000;
         transition: .5s;
 
     }
@@ -179,7 +180,7 @@ nav ul li:hover{
         position: absolute;
         width: 0;
         height: 2px;
-        background-color: #f9f9f9;
+        background-color: #2e2e2e;
         transition: .5s;
         opacity: 0;
     }
@@ -202,7 +203,7 @@ nav ul li:hover{
     .header-nav li:hover,
     .header-nav li a:hover{
         background-color: transparent;
-        color: #d4d4d4;
+        color: #484848;
         transition: all .2s ease-in-out;
     }
     .menu-btn{

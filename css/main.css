@@ -7,11 +7,87 @@
 body {
   margin: 0;
   font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.6;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+section {
+  padding: 7em o;
+}
+
+.container {
+  width: 85%;
+  max-width: 65em;
+  margin: 0 auto;
+}
+
+.spacing > * + * {
+  margin-top: var(--spacer, 2rem);
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-text, white);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  padding: 0.5em 1.25em;
+  background: var(--clr-accent, blue);
+  border-radius: 0.25em;
+  transition: transform 250ms ease-in-out;
+}
+
+.btn:hover,
+.btn:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.primary-title {
+  font-size: 3.6rem;
+  font-size: clamp(2.8rem, calc(3.7vw + 1rem), 4.5rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.hero {
+  color: #fff;
+  margin-top: -5rem;
+  text-align: center;
+  padding: 13em 0;
+  background: #222;
+}
+@supports (background-blend-mode: multiply) {
+  .hero {
+    background-image: url(../images/HeroImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-blend-mode: multiply;
+  }
+}
+
+.hero-img {
+  margin: -5em 0 5em 0;
+  width: 100vw;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
 }
 
 /*============== navBar =============*/
@@ -31,7 +107,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: #000000;
+  color: #ffffff;
   display: inline-block;
   display: -webkit-inline-box;
   display: -moz-inline-box;
@@ -41,7 +117,7 @@ nav ul li a {
 }
 
 nav ul li:hover {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .speedy-logo {
@@ -50,6 +126,10 @@ nav ul li:hover {
   margin: auto;
   padding: 0.6rem;
   display: flex;
+}
+
+header {
+  background-color: transparent;
 }
 
 .header-nav {
@@ -86,7 +166,7 @@ nav ul li:hover {
 .menu-btn_burger {
   width: 2rem;
   height: 4px;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
@@ -97,7 +177,7 @@ nav ul li:hover {
   position: absolute;
   width: 2rem;
   height: 4px;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
@@ -175,7 +255,7 @@ nav ul li:hover {
 }
 
 /*Screen adjustments for a responsive results*/
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 45em) {
   nav {
     height: 5rem;
   }
@@ -199,7 +279,7 @@ nav ul li:hover {
   /*effect on links when hover*/
   .header-nav a {
     position: relative;
-    color: #000000;
+    color: #ffffff;
     transition: 0.5s;
   }
 
@@ -238,6 +318,10 @@ nav ul li:hover {
     background-color: transparent;
     color: #484848;
     transition: all 0.2s ease-in-out;
+  }
+
+  .menu-btn {
+    display: none;
   }
 }
 

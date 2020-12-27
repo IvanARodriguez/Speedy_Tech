@@ -19,13 +19,26 @@ p{
     margin: 0;
 }
 section{
-    padding: 7em o;
+    padding: 20px opx;
 }
 .container{
     width: 85%;
     max-width: 65em;
     margin: 0 auto;
 }
+
+.split{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & > * {
+        flex-basis: 30%;
+        min-width: 15em;
+    }
+}
+
 .spacing > * + * {
     margin-top: var(--spacer, 2rem);
 }
@@ -52,32 +65,49 @@ section{
     line-height: 1;
     text-transform: uppercase;
   }
-  .section-title{}
+.section-title{
+    text-align: center;
+    font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+    line-height: 1;
+    color: #17353d;
+    padding: 3rem 0;
+}
 
-  .hero{
-      color: #fff;
-      margin-top: -5rem;
-      text-align: center;
-      padding: 13em 0;
-      background: #222;
-      @supports(background-blend-mode: multiply){
+.hero{
+    color: #fff;
+    margin-top: -5rem;
+    text-align: center;
+    padding: 12em 0 8em;
+    background: #222;
+    @supports(background-blend-mode: multiply){
         background-image: url(../images/HeroImage.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         background-position: center center;
         background-blend-mode: multiply;
-      }
-  }
+    }
+}
+.feature{
+    background: #eee;
+    &__item{
+        display: block;
+        position: relative;
+        transform: scale(.85);
+        transition: transform 250ms ease-in-out;
+
+        &:hover,
+        &:focus{
+            transform: scale(1);
+        }
+    }
+}
   .hero-img{
       margin: -5em auto 5em auto;
       width: 100%;
       max-width: 720px;
   }
-  .section-title{
-      text-align: center;
-      font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
-  }
+
 /*============== navBar =============*/
 
 header{

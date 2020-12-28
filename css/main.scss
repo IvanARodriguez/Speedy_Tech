@@ -32,6 +32,7 @@ section{
     gap: 1em;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 3em;
 
     & > * {
         flex-basis: 30%;
@@ -67,7 +68,7 @@ section{
   }
 .section-title{
     text-align: center;
-    font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+    font-size: clamp(2rem, calc(3.5vw + 1rem), 3rem);
     line-height: 1;
     color: #17353d;
     padding: 3rem 0;
@@ -95,6 +96,10 @@ section{
         position: relative;
         transform: scale(.85);
         transition: transform 250ms ease-in-out;
+        text-align: center;
+        text-decoration: none;
+        color: #777777;
+        font-size: 1.05em;
 
         &:hover,
         &:focus{
@@ -103,13 +108,23 @@ section{
         &::after{
             content: '';
             position: absolute;
-            padding: 75% 75% 0 0;
+            padding: 100% 100% 0 0;
             border-radius: 50%;
             top: 0%;
             left: 15%;
-            background-color: #00043c;
-            z-index: -1;
+            background-color: #0048ce95;
+            z-index: -1; 
         }
+        &, p{
+            padding-top: 2em;
+        }
+    }
+    &-name{
+        font-weight: bolder;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        color: #0354bf;
+        display: block;
     }
 }
   .hero-img{

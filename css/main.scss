@@ -2,14 +2,16 @@
 *::before,
 *::after{
     box-sizing: border-box;
+    margin: auto;
 }
 body{
-    margin: 0;
+    margin: auto;
     font-family: 'Noto Sans JP', sans-serif;
     line-height: 1.6;
 }
 img{
     max-width: 100%;
+    margin: auto;
     display: block;
 }
 h1,
@@ -94,7 +96,7 @@ section{
     &__item{
         display: block;
         position: relative;
-        transform: scale(.30);
+        transform: scale(.85);
         transition: transform 250ms ease-in-out;
         text-align: center;
         text-decoration: none;
@@ -127,10 +129,22 @@ section{
         display: block;
     }
 }
-.our-products{
+.product{
+    padding: 3em;
+    background: rgb(120, 149, 181);
+    border-radius: 1em;
+    margin-bottom: 3em;
+    text-align: center;
+    max-width: 30%;
 
+    &__title{
+        font-size: 2rem;
+        font-weight: 900;
+        color: white;
+        line-height: 1.1;
+        text-shadow: 0 0 0.2 rgba(#000, .2);
+    }
 }
-
   .hero-img{
       margin: -5em auto 5em auto;
       width: 100%;

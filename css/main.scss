@@ -94,7 +94,7 @@ section{
     &__item{
         display: block;
         position: relative;
-        transform: scale(.85);
+        transform: scale(.30);
         transition: transform 250ms ease-in-out;
         text-align: center;
         text-decoration: none;
@@ -127,6 +127,10 @@ section{
         display: block;
     }
 }
+.our-products{
+
+}
+
   .hero-img{
       margin: -5em auto 5em auto;
       width: 100%;

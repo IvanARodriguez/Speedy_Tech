@@ -89,6 +89,7 @@ section{
         background-attachment: fixed;
         background-position: center center;
         background-blend-mode: multiply;
+        --clr-accent: #faa700;
     }
 }
 .feature{
@@ -131,18 +132,67 @@ section{
 }
 .product{
     padding: 3em;
-    background: rgb(138, 164, 191);
     border-radius: 1em;
     margin-bottom: 3em;
     text-align: center;
+    --clr-accent: limegreen;
 
     &__title{
         font-size: 2rem;
         font-weight: 900;
+        text-transform: uppercase;
         color: white;
-        line-height: 1.1;
+        line-height: 1;
         text-shadow: 0 0 0.2 rgba(#000, .2);
     }
+    &__image{
+        border-radius: 5%;
+        margin: -4rem auto auto auto;
+    }
+    @media (min-width: 45em) {
+        text-align: left;
+        & p{
+            max-width: 60%;
+        }
+        &__image{
+            float: right;
+            margin: auto;
+            width: 35%;
+            margin-top: -5em;
+            shape-outside: url(../images/repair.png);
+        }
+        .second-card &__image{
+            float: left;
+        }
+    }
+}
+.first-card{
+    background: #A26143;
+
+    &, p{
+        color: lightgrey;
+    }
+}
+.second-card{
+    background: #D2A643;
+    & p {
+        text-align: justify;
+    }
+    & h3{
+        color: #000;
+    }
+    @media (min-width: 45em) {
+        text-align: right;
+        & p{
+            margin-left: 25rem;
+            max-width: 100%;
+            text-align: right;
+        }
+    }
+}
+.third-card{
+    background: #0F2A64;
+    color: lightgrey;
 }
   .hero-img{
       margin: -5em auto 5em auto;

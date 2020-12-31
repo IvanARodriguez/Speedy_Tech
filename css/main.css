@@ -99,6 +99,7 @@ section {
     background-attachment: fixed;
     background-position: center center;
     background-blend-mode: multiply;
+    --clr-accent: #faa700;
   }
 }
 
@@ -141,17 +142,72 @@ section {
 
 .product {
   padding: 3em;
-  background: #8aa4bf;
   border-radius: 1em;
   margin-bottom: 3em;
   text-align: center;
+  --clr-accent: limegreen;
 }
 .product__title {
   font-size: 2rem;
   font-weight: 900;
+  text-transform: uppercase;
   color: white;
-  line-height: 1.1;
+  line-height: 1;
   text-shadow: 0 0 0.2 rgba(0, 0, 0, 0.2);
+}
+.product__image {
+  border-radius: 5%;
+  margin: -4rem auto auto auto;
+}
+@media (min-width: 45em) {
+  .product {
+    text-align: left;
+  }
+  .product p {
+    max-width: 60%;
+  }
+  .product__image {
+    float: right;
+    margin: auto;
+    width: 35%;
+    margin-top: -5em;
+    shape-outside: url(../images/repair.png);
+  }
+  .second-card .product__image {
+    float: left;
+  }
+}
+
+.first-card {
+  background: #A26143;
+}
+.first-card, .first-card p {
+  color: lightgrey;
+}
+
+.second-card {
+  background: #D2A643;
+}
+.second-card p {
+  text-align: justify;
+}
+.second-card h3 {
+  color: #000;
+}
+@media (min-width: 45em) {
+  .second-card {
+    text-align: right;
+  }
+  .second-card p {
+    margin-left: 25rem;
+    max-width: 100%;
+    text-align: right;
+  }
+}
+
+.third-card {
+  background: #0F2A64;
+  color: lightgrey;
 }
 
 .hero-img {

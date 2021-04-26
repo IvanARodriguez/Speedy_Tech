@@ -462,6 +462,13 @@ nav ul li:hover {
   .menu-btn {
     display: none;
   }
+
+  .hero .container p {
+    width: 50%;
+    font-size: larger;
+    color: #c0c5e1;
+    margin: 3rem auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

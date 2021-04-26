@@ -62,6 +62,7 @@ section{
     transform: scale(1.1);
     opacity: .9;
 }
+
 .primary-title{
     font-size: 3.6rem;
     font-size: clamp(2.5rem, calc(3.7vw + 1rem), 4.5rem);
@@ -418,5 +419,13 @@ nav ul li:hover{
     }
     .menu-btn{
         display: none;
+    }
+    .hero .container{
+        & p{
+            width: 50%;
+            font-size: larger;
+            color: #c0c5e1;
+            margin:  3rem auto;
+        }
     }
 }
